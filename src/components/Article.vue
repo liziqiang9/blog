@@ -13,14 +13,11 @@ export default {
   created() {
     let _this = this;
     let path = this.$route.path.split('/');
-    let url = '/test';
-    if (process.env.NODE_ENV == "production") {
-      url = '/data'
-    }
-    if(path.length == 3) {
-      url += '/public/' + path[2];
+    let url = process.env.VUE_APP_DATA_URL;
+    if(path.length == 4) {
+      url += '/public/' + path[3];
     } else {
-      for (let i = 2; i < path.length; i++) {
+      for (let i = 3; i < path.length; i++) {
         url += '/' + path[i];
       }
     }

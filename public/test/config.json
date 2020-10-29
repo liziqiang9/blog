@@ -3,13 +3,13 @@
         {
             "name": "blog",
             "time": "2020-10-28",
-            "url": "/article/blog",
+            "url": "/blog",
             "tags": ["md"]
         },
         {
             "name": "main",
             "time": "2020-10-26",
-            "url": "/article/main",
+            "url": "/main",
             "tags": ["python", "java"]
         }
     ],
@@ -17,7 +17,7 @@
         {
             "name": "utf",
             "time": "2020-1-25",
-            "url": "/article/utf",
+            "url": "/utf",
             "tags": ["默认"]
         }
     ]

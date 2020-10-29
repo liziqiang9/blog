@@ -21,18 +21,18 @@ export default {
     TagDirectory,
   },
   created() {
-    if (this.$route.path === "/") {
+    if (this.$route.name === "home") {
       this.todo = "year";
-    } else if (this.$route.path === "/tag") {
+    } else if (this.$route.name === "tag") {
       this.todo = "tag";
     }
   },
   
   watch: {
     $route(to) {
-      if (to.path === "/") {
+      if (to.name === "home") {
         this.todo = "year";
-      } else if (to.path === "/tag") {
+      } else if (to.name === "tag") {
         this.todo = "tag";
       }
     },

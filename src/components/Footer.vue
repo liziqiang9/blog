@@ -4,7 +4,7 @@
       <p class="title">标签</p>
       <router-link
         v-for="(count, name, index) in tags"
-        :to="'/tag?name=' + name"
+        :to="root_url + '/tag?name=' + name"
         :key="index"
         class="tags-tag"
         >{{ name }}@{{ count }}
@@ -19,6 +19,7 @@ export default {
   data() {
     return {
       tags: {},
+      root_url: process.env.VUE_APP_ROOT_URL,
     };
   },
   created() {

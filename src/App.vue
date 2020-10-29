@@ -15,12 +15,8 @@ export default {
      */
     load_config() {
       let _this = this;
-      let url = "/test";
-      if (process.env.NODE_ENV == "production") {
-        url = "/data";
-      }
       this.axios
-        .get(url + "/config.json")
+        .get(process.env.VUE_APP_DATA_URL + "/config.json")
         .then((response) => {
           if (response.status == 200) {
             let { tags, years, dataInfo } = _this.disposeData(response.data);

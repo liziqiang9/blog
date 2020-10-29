@@ -6,7 +6,7 @@
     <ul>
       <li class="article" v-for="article of data[key]" :key="article.url">
         <span>{{ article.time.substring(5) }}</span>
-        <router-link :to="article.url">{{ article.name }}</router-link>
+        <router-link :to="root_url + '/article' + article.url">{{ article.name }}</router-link>
       </li>
     </ul>
   </ul>
@@ -17,6 +17,7 @@ export default {
   data() {
     return {
       data: {},
+      root_url: process.env.VUE_APP_ROOT_URL,
     };
   },
   created() {

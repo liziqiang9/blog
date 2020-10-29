@@ -7,17 +7,17 @@ export const router = createRouter({
     history: routerHistory,
     routes: [
         {
-            path: '/',
+            path: process.env.VUE_APP_ROOT_URL,
             name: 'home',
             component: Home
         },
         {
-            path: '/tag',
+            path: process.env.VUE_APP_ROOT_URL + '/tag',
             name: 'tag',
             component: Home
         },
         {
-            path: "/article/:name",
+            path: process.env.VUE_APP_ROOT_URL + "/article/:name",
             name: "article",
             component: VArticle
           },
