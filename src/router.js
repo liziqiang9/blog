@@ -17,10 +17,10 @@ export const router = createRouter({
             component: Home
         },
         {
-            path: process.env.VUE_APP_ROOT_URL + "/article/:name",
+            path: process.env.VUE_APP_ROOT_URL + "/:article+",
             name: "article",
             component: VArticle
-          },
+        },
     ]
 })
 

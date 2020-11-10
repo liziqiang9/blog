@@ -9,7 +9,6 @@ export default {
   name: "Menu",
   methods: {
       backPreviousPage() {
-          console.log("232332")
           this.$router.go(-1);
       }
   }
