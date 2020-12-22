@@ -1,6 +1,14 @@
 {
     "2020": [
         {
+            "name": "java基础",
+            "time": "2020-12-22",
+            "url": "/public/java/java基础",
+            "tags": [
+                "java"
+            ]
+        },
+        {
             "name": "世界，您好！",
             "time": "2020-11-09",
             "url": "/public/随记/博客建成随记",
